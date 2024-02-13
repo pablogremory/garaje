@@ -40,6 +40,7 @@ $resultado = $mysqli->query($sql);
 					<tr>
 						<th>Nombre</th>
 						<th>Edad</th>
+                        <th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -47,7 +48,8 @@ $resultado = $mysqli->query($sql);
 					 while($fila = $resultado->fetch_assoc()){
 						echo "<tr>";
 							echo "<td>$fila[nombre]</td>";
-							echo "<td>$fila[edad]</td>";							
+							echo "<td>$fila[edad]</td>";
+                            echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Ver vehiculos</button></td>";						
 						echo "</tr>";
 				
 					}
