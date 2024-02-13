@@ -1,6 +1,6 @@
 <?php
 require 'conexion.php';
-$sql = "select * from garaje order by nombre";
+$sql = "select * from usuarios order by nombre";
 $resultado = $mysqli->query($sql);
 	
 ?>
