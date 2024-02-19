@@ -24,7 +24,7 @@
 			
 	 
 			 //Se prepara la sentencia SQL
-			  $sql = "INSERT INTO garaje(nombre, edad) VALUES ('$nombre','$edad')";
+			  $sql = "INSERT INTO usuarios(nombre, edad) VALUES ('$nombre','$edad')";
 	 
 			 //Se ejecuta la sentencia y se guarda el resultado en $resultado
 			$resultado = $mysqli->query($sql);

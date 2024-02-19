@@ -25,8 +25,8 @@
 					<!-- Completar atributos de form -->
 					<form action="registrar2.php" id="registro" name="registro" autocomplete="off" method="post">
 
-						<label for="nombre">Nombre</label><input type="date" class="form-control" name="nombre" maxlength="50" id="nombre" required>
-                        <label for="Edad">Edad</label><input type="edad" class="form-control" name="edad" maxlength="50" id="edad" required>
+						<label for="nombre">Nombre</label><input type="text" class="form-control" name="nombre" maxlength="50" id="nombre" required>
+                        <label for="Edad">Edad</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
 						
 						<div class="form-group">
 						<button type="submit" class="btn btn-primary">Registrar</button>
