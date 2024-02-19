@@ -17,7 +17,7 @@
 
 
         //Se prepara la sentencia SQL
-        $sql = "UPDATE usuarios SET marca='$marca',matricula='$matricula'";
+        $sql = "UPDATE vehiculos SET marca='$marca',matricula='$matricula'";
         //Se ejecuta la sentencia y se guarda el resultado en $resultado
         $resultado = $mysqli->query($sql);
 
