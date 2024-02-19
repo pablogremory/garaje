@@ -14,7 +14,7 @@
     <title>Editar registro</title>
 </head>
 <body>
-    <form action="editar2.php" method="post">
+    <form action="editarcoche2.php" method="post">
         <input type="hidden" name="id" value="<?php echo $fila ['id'];?>">
         <p><label>Marca: <input type="text" name="marca" maxlength="50" required value="<?php echo $fila['marca'];?>"></label></p>
         <p><label>Matricula: <input type="text" name="matricula" maxlength="50" required value="<?php echo $fila['matricula'];?>"></label></p>
