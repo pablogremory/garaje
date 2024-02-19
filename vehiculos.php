@@ -1,9 +1,8 @@
 <?php
 require 'conexion.php';
-$sql = "select * from vehiculos order by marca";
-$sql2 = "select * from plaza";
+$sql = "select * from vehiculos";
 $resultado = $mysqli->query($sql);
-$resultado2 = $mysqli->query($sql2);
+
 
 	
 ?>
@@ -46,17 +45,26 @@ $resultado2 = $mysqli->query($sql2);
 						<th>Plaza</th>
 					</tr>
 				</thead>
-				<tbody>
 					<?php
 					 while($fila = $resultado->fetch_assoc()){
 						echo "<tr>";
 							echo "<td>$fila[marca]</td>";
 							echo "<td>$fila[matricula]</td>";
-							echo "<td>$fila[plaza]</td>";
-						echo "</tr>";
-				
+							//CONSULTA CON LIMIT = 1
+							$sql2 = "select * from plaza where id_v=$fila[id_v]";
+							$resultado2 = $mysqli->query($sql2);
+							if($fila2 = $resultado2->fetch_assoc()){
+								echo "<td>$fila2[id_p]</td>";
+							} else{
+								echo "<td>- -</td>";
+							}
+							
 					}
+					
 					?>
+					<?php
+					
+				   ?>
 				</tbody>
 			</table>
 			
