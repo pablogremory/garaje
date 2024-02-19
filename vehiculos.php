@@ -1,7 +1,10 @@
 <?php
 require 'conexion.php';
 $sql = "select * from vehiculos order by marca";
+$sql2 = "select * from plaza";
 $resultado = $mysqli->query($sql);
+$resultado2 = $mysqli->query($sql2);
+
 	
 ?>
 
@@ -40,6 +43,7 @@ $resultado = $mysqli->query($sql);
 					<tr>
 						<th>Marca</th>
 						<th>Matricula</th>
+						<th>Plaza</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -48,6 +52,7 @@ $resultado = $mysqli->query($sql);
 						echo "<tr>";
 							echo "<td>$fila[marca]</td>";
 							echo "<td>$fila[matricula]</td>";
+							echo "<td>$fila[plaza]</td>";
 						echo "</tr>";
 				
 					}
