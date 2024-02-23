@@ -18,12 +18,12 @@ body{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        background-image: url(recursos/istockphoto-1473881854-640x640.jpg);
+        background-image: url('recursos/istockphoto-1473881854-640x640.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
 
         /* background-color: white; */
         border-radius: 10px;
-        border-color: aqua;
         border: 2px solid rgb(217, 153, 57);
 }
 
