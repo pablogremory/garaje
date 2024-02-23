@@ -30,7 +30,7 @@
 					<form action="añadir2.php" id="registro" name="registro" autocomplete="off" method="post">
 
 						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" required>
-                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" required>
+                        <label for="Matrícula">Matrícula:</label><input type="text" class="form-control" name="matricula" maxlength="7" id="matricula" required>
 						<br>
 						¿Asignar Plaza?
 						<input type="hidden" name="id" maxlength="50" id="id" value="<?php echo $id; ?>" required>
