@@ -24,7 +24,7 @@
 				echo "<div class='alert alert-danger' role='alert'>Hubo un error y no se ha podido borrar correctamente.</div>";
 	
 			}
-			echo "<p><a href='index.php'><button type='button' class='btn btn-success'>Volver</button></a></p>";	
+			echo "<p><a href='index.html'><button type='button' class='btn btn-success'>Volver</button></a></p>";	
 			
 			
 		?>
