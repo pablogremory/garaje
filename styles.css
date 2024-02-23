@@ -50,3 +50,9 @@ body{
 h2 {
     color:rgb(217, 153, 57);
 }
+
+.alert {
+    background-color: rgb(217, 153, 57);
+    border: 2px solid rgb(217, 153, 57);
+    color: white;
+}
