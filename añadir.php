@@ -31,6 +31,7 @@
                         <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
 						<br>
 						¿Asignar Plaza?
+						<input type="hidden" name="edad" maxlength="50" id="id_persona" value="<?php echo $id; ?>" required>
 						<select class="form-select" name="plaza" aria-label="Default select example">
 							<option value="0" selected>No</option>
 							<option value="1">Si</option>
