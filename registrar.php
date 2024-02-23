@@ -16,10 +16,9 @@
     <title>Registro</title>
 </head>
 <body>
-	<h1>Registrate para acceder a nuestro parking</h1>
 		<div class="container">
 			<div class="row">
-				<h1>Socios</h1>
+			<h1>Regístrate para acceder a nuestro parking</h1>
 			</div>
 			
 			<div class="row">
@@ -27,8 +26,8 @@
 					<!-- Completar atributos de form -->
 					<form action="registrar2.php" id="registro" name="registro" autocomplete="off" method="post">
 
-						<label for="nombre">Nombre</label><input type="text" class="form-control" name="nombre" maxlength="50" id="nombre" required>
-                        <label for="Edad">Edad</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
+						<label for="nombre">Nombre:</label><input type="text" class="form-control" name="nombre" maxlength="50" id="nombre" required>
+                        <label for="Edad">Edad:</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
 						
 						<div class="form-group">
 						<button type="submit" class="btn btn-primary">Registrar</button>

@@ -18,7 +18,20 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    
-        background-color: white;
+        background-image: url(recursos/istockphoto-1473881854-640x640.jpg);
+
+        /* background-color: white; */
         border-radius: 10px;
+}
+
+#registro {
+    padding: 10px;
+}
+
+.form-group{
+    padding-top: 10px;
+}
+
+.row{
+    padding: 10px;
 }
