@@ -76,7 +76,7 @@ $fila3 = $resultado3->fetch_assoc();
 		</div>
 	</div>
 	<?php
-echo "<a href='vehiculos.php?id=$fila3[id]'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
+echo "<a href='añadir.php?id=$fila3[id]'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
 ?>
 	</body>
 </html>
