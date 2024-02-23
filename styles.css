@@ -1,5 +1,68 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('recursos/utendo/Utendo-Light.ttf');
+    /* Puedes agregar otros formatos de fuente si los tienes disponibles */
+}
+    
+*{
+    font-family: "fuente";
+}
+body{
+    background-image: url('recursos/plazagaraje2.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    margin: 20px;
+    
+}
+/*
+.container{
+        position: absolute;
+        margin-top: 150;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+
+         background-color: white; 
+        padding: 20px;
+        border-radius: 10px;
+        border-color: aqua;
+        border: 2px solid rgb(217, 153, 57);
+} 
+
+/* #registro {
+    padding: 10px;
+}
+
+.form-group{
+    padding-top: 10px;
+}
+
+.row{
+    padding: 10px;
+}
+
+.btn{
+    background-color: rgb(217, 153, 57);
+    border: 2px solid rgb(217, 153, 57);
+}
+/* p{
+    color:rgb(219, 152, 28);
+} 
+
+h2 {
+    color:rgb(217, 153, 57);
+}
+
+.alert {
+    background-color: rgb(217, 153, 57);
+    border: 2px solid rgb(217, 153, 57);
+    color: white;
+}
+
 .ba{
     margin-top: 50px;
     margin-left: 170px;
     background-color: orange;
-}
+} */

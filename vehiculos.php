@@ -1,11 +1,17 @@
 <?php
+
+$id = $_GET['id'];
 require 'conexion.php';
-$sql = "select * from vehiculos";
+$sql = "select * from vehiculos where id='$id'";
 $resultado = $mysqli->query($sql);
 
 $sql2 = "select * from vehiculos";
 $resultado3 = $mysqli->query($sql2);
 $fila3 = $resultado3->fetch_assoc();
+
+$sql3 = "select * from usuarios where id='$id'";
+$resultado4 = $mysqli->query($sql3);
+$fila4 = $resultado4->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +41,7 @@ $fila3 = $resultado3->fetch_assoc();
 <body>
 		<div class="container">
 			<div class="row">
-				<h1>Vehiculos</h1>
+				<h1>Vehiculos de <?php echo $fila4['nombre'];?></h1>
 			</div>
 			<br>
 			
