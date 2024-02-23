@@ -40,7 +40,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="añadir2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="modificar2.php" id="registro" name="registro" autocomplete="off" method="post">
 
 						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" value="<?php echo $marca?>" required>
                         <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" value="<?php echo $matricula?>" required>
@@ -57,7 +57,7 @@
 							if( $disponibilidad == 1 ){
 							echo "selected";
 							};
-							?>>No</option>
+							?>>Si</option>
 						</select>
 						<div class="form-group">
 						<button type="submit" class="btn btn-primary">Registrar</button>
