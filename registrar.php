@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery.dataTables.min.css">	
+	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="styles.css">	
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.4.1.min.js" ></script>
@@ -15,6 +16,7 @@
     <title>Registro</title>
 </head>
 <body>
+	<h1>Registrate para acceder a nuestro parking</h1>
 		<div class="container">
 			<div class="row">
 				<h1>Socios</h1>
