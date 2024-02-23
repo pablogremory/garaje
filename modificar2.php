@@ -24,20 +24,12 @@
 			 $disponibilidad = $_POST['disponibilidad'];
 			 $id = $_POST['id'];
 			
-			 echo $id, $disponibilidad, $marca, $matricula;
 	 
-			 //Se prepara la sentencia SQL
-			  $sql = "INSERT INTO vehiculos(marca, matricula, id) VALUES ('$marca','$matricula',$id)";
-			  
-			 //Se ejecuta la sentencia y se guarda el resultado en $resultado
-			$resultado = $mysqli->query($sql);
+			 $sql = "UPDATE vehiculos SET marca = '$marca', matricula = '$matricula' WHERE id_v = $id";
+			 $resultado = $mysqli->query($sql);
 	 
 			if($resultado > 0){
-				$sql = "SELECT * FROM vehiculos where matricula=$matricula";
-				$resultado = $mysqli->query($sql);
-				$fila = $resultado->fetch_assoc();
-
-				$sql = "INSERT INTO plaza(id_v, disponibilidad) VALUES ('$fila[id_v]','$plaza')";
+				$sql = "UPDATE plaza SET disponibilidad = '$disponibilidad' WHERE id_v = $id";
 				$resultado = $mysqli->query($sql);
 				?>
 
