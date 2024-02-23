@@ -46,14 +46,14 @@
                         <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" value="<?php echo $matricula?>" required>
 						<br>
 						¿Asignar Plaza?
-						<input type="hidden" name="id_v" maxlength="50" id="id" value="<?php echo $id; ?>" required>
-						<select class="form-select" name="plaza" aria-label="Default select example">
-							<option value="0" <?php 
+						<input type="hidden" name="id" maxlength="50" id="id" value="<?php echo $id; ?>" required>
+						<select class="form-select" name="disponibilidad" aria-label="Default select example">
+							<option value="0"<?php 
 							if( $disponibilidad == 0 ){
 							echo "selected";
 							};
 							?>>No</option>
-							<option value="1" <?php 
+							<option value="1"<?php 
 							if( $disponibilidad == 1 ){
 							echo "selected";
 							};

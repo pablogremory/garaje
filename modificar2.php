@@ -21,9 +21,10 @@
 	 
 			 $matricula = $_POST['matricula'];
 			 $marca = $_POST['marca'];
-			 $plaza = $_POST['plaza'];
+			 $disponibilidad = $_POST['disponibilidad'];
 			 $id = $_POST['id'];
 			
+			 echo $id, $disponibilidad, $marca, $matricula;
 	 
 			 //Se prepara la sentencia SQL
 			  $sql = "INSERT INTO vehiculos(marca, matricula, id) VALUES ('$marca','$matricula',$id)";
