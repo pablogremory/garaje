@@ -53,7 +53,7 @@ body{
 
 .index h1{
      color: black;
-     background-color: white;
+     background-image: url(recursos/istockphoto-1473881854-640x640.jpg);
      padding: 10px;
      border: 2px solid rgb(217, 153, 57);
      border-radius: 10px;
@@ -62,6 +62,12 @@ body{
 }
 
 .btn-index:hover {
+    background-color: rgb(203, 123, 2);
+    border: 2px solid rgb(217, 153, 57);
+    
+}
+
+.btn-index:active {
     background-color: rgb(203, 123, 2);
     border: 2px solid rgb(217, 153, 57);
     
