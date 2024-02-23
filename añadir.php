@@ -1,3 +1,6 @@
+<?php
+	$id = $_GET['id']
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +22,18 @@
 		<div class="container">
 			<div class="row">
 			<h2>Registro de coche</h2>
-			
 			</div>
 			<p>Añade la marca, la matrícula y seleccione si ya tiene plaza o no</p>
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="registrar2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="añadir2.php" id="registro" name="registro" autocomplete="off" method="post">
 
 						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" required>
-                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
+                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" required>
 						<br>
 						¿Asignar Plaza?
-						<input type="hidden" name="edad" maxlength="50" id="id_persona" value="<?php echo $id; ?>" required>
+						<input type="hidden" name="id" maxlength="50" id="id" value="<?php echo $id; ?>" required>
 						<select class="form-select" name="plaza" aria-label="Default select example">
 							<option value="0" selected>No</option>
 							<option value="1">Si</option>

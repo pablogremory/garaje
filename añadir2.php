@@ -21,16 +21,22 @@
 			 $matricula = $_POST['matricula'];
 			 $marca = $_POST['marca'];
 			 $plaza = $_POST['plaza'];
-			 
+			 $id = $_POST['id'];
 			
 	 
 			 //Se prepara la sentencia SQL
-			  $sql = "INSERT INTO vehiculos(marca, edad) VALUES ('$nombre','$edad')";
-	 
+			  $sql = "INSERT INTO vehiculos(marca, matricula, id) VALUES ('$marca','$matricula',$id)";
+			  
 			 //Se ejecuta la sentencia y se guarda el resultado en $resultado
 			$resultado = $mysqli->query($sql);
 	 
 			if($resultado > 0){
+				$sql = "SELECT * FROM vehiculos where matricula=$matricula";
+				$resultado = $mysqli->query($sql);
+				$fila = $resultado->fetch_assoc();
+				
+				$sql = "INSERT INTO plaza(id_v, disponibilidad) VALUES ('$fila[id_v]','$plaza')";
+				$resultado = $mysqli->query($sql);
 				?>
 
 				<div class="alert alert-primary" role="alert">
