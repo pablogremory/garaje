@@ -3,8 +3,9 @@ require 'conexion.php';
 $sql = "select * from vehiculos";
 $resultado = $mysqli->query($sql);
 
-
-	
+$sql2 = "select * from vehiculos";
+$resultado3 = $mysqli->query($sql2);
+$fila3 = $resultado3->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@ $resultado = $mysqli->query($sql);
     <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="styles.css">
 		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -58,18 +60,23 @@ $resultado = $mysqli->query($sql);
 							} else{
 								echo "<td>- -</td>";
 							}
-							
+							echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Modificar Vehículo</button></td>";					
+
 					}
 					
+
 					?>
 					<?php
 					
 				   ?>
 				</tbody>
+
 			</table>
 			
 		</div>
 	</div>
-    
-</body>
+	<?php
+echo "<a href='vehiculos.php?id=$fila3[id]'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
+?>
+	</body>
 </html>

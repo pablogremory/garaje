@@ -41,6 +41,7 @@ $resultado = $mysqli->query($sql);
 						<th>Nombre</th>
 						<th>Edad</th>
                         <th></th>
+						<ht></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -49,8 +50,9 @@ $resultado = $mysqli->query($sql);
 						echo "<tr>";
 							echo "<td>$fila[nombre]</td>";
 							echo "<td>$fila[edad]</td>";
-                            echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Ver vehiculos</button></td>";						
-						echo "</tr>";
+                            echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Ver vehiculos</button></td>";	
+
+							echo "</tr>";
 				
 					}
 					?>
