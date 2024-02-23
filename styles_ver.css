@@ -14,24 +14,23 @@ body{
     margin: 20px;
     
 }
-/*
+
 .container{
-        position: absolute;
+        /* position: absolute;
         margin-top: 150;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         
         
 
-         background-color: white; 
+       
         padding: 20px;
         border-radius: 10px;
-        border-color: aqua;
         border: 2px solid rgb(217, 153, 57);
 } 
 
-/* #registro {
+#registro {
     padding: 10px;
 }
 
@@ -47,7 +46,7 @@ body{
     background-color: rgb(217, 153, 57);
     border: 2px solid rgb(217, 153, 57);
 }
-/* p{
+ p{
     color:rgb(219, 152, 28);
 } 
 
@@ -65,4 +64,4 @@ h2 {
     margin-top: 50px;
     margin-left: 170px;
     background-color: orange;
-} */
+}

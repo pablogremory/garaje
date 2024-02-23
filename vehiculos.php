@@ -22,7 +22,7 @@ $fila4 = $resultado4->fetch_assoc();
     <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/jquery.dataTables.min.css">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles_ver.css">
 		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
