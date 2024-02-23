@@ -1,5 +1,18 @@
 <?php
-	$id = $_GET['id']
+	$id = $_GET['id'];
+	require 'conexion.php';
+
+	$sql = "SELECT * FROM vehiculos where id_v=$id";
+	$resultado = $mysqli->query($sql);
+	$fila = $resultado->fetch_assoc();
+
+	$sql2 = "SELECT * FROM plaza where id_v=$id";
+	$resultado2 = $mysqli->query($sql2);
+	$fila2 = $resultado2->fetch_assoc();
+	
+	$matricula = $fila['matricula'];
+	$marca = $fila['marca'];
+	$disponibilidad = $fila2['disponibilidad'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,14 +42,22 @@
 					<!-- Completar atributos de form -->
 					<form action="añadir2.php" id="registro" name="registro" autocomplete="off" method="post">
 
-						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" required>
-                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" required>
+						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" value="<?php echo $marca?>" required>
+                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" value="<?php echo $matricula?>" required>
 						<br>
 						¿Asignar Plaza?
-						<input type="hidden" name="id" maxlength="50" id="id" value="<?php echo $id; ?>" required>
+						<input type="hidden" name="id_v" maxlength="50" id="id" value="<?php echo $id; ?>" required>
 						<select class="form-select" name="plaza" aria-label="Default select example">
-							<option value="0" selected>No</option>
-							<option value="1">Si</option>
+							<option value="0" <?php 
+							if( $disponibilidad == 0 ){
+							echo "selected";
+							};
+							?>>No</option>
+							<option value="1" <?php 
+							if( $disponibilidad == 1 ){
+							echo "selected";
+							};
+							?>>No</option>
 						</select>
 						<div class="form-group">
 						<button type="submit" class="btn btn-primary">Registrar</button>
