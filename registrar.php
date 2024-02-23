@@ -18,10 +18,10 @@
 <body>
 		<div class="container">
 			<div class="row">
-			<h2>!Bienvenido!</h2>
+			<h2>Registro</h2>
 			
 			</div>
-			<p>Regístrate para acceder a nuestro parking</p>
+			<p>Añade el nombre y edad del nuevo usuario</p>
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
