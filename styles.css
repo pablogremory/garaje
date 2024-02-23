@@ -23,7 +23,6 @@ body{
 
         /* background-color: white; */
         border-radius: 10px;
-        border-color: aqua;
         border: 2px solid rgb(217, 153, 57);
 }
 
@@ -42,6 +41,29 @@ body{
 .btn{
     background-color: rgb(217, 153, 57);
     border: 2px solid rgb(217, 153, 57);
+}
+
+.index{
+    background-color: rgb(217, 153, 57);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+.index h1{
+     color: black;
+     background-color: white;
+     padding: 10px;
+     border: 2px solid rgb(217, 153, 57);
+     border-radius: 10px;
+     
+}
+
+.btn-index:hover {
+    background-color: rgb(203, 123, 2);
+    border: 2px solid rgb(217, 153, 57);
+    
 }
 /* p{
     color:rgb(219, 152, 28);
