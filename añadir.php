@@ -18,10 +18,10 @@
 <body>
 		<div class="container">
 			<div class="row">
-			<h2>Registro</h2>
+			<h2>Registro de coche</h2>
 			
 			</div>
-			<p>Añade el nombre y edad del nuevo usuario</p>
+			<p>Añade la marca, la matrícula y seleccione si ya tiene plaza o no</p>
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
@@ -29,7 +29,12 @@
 
 						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" required>
                         <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="edad" maxlength="50" id="edad" required>
-						
+						<br>
+						¿Asignar Plaza?
+						<select class="form-select" name="plaza" aria-label="Default select example">
+							<option value="0" selected>No</option>
+							<option value="1">Si</option>
+						</select>
 						<div class="form-group">
 						<button type="submit" class="btn btn-primary">Registrar</button>
 						</div>

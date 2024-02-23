@@ -18,8 +18,9 @@
 
 			 //Obtengo los datos introducidos en el formualrio
 	 
-			 $edad = $_POST['edad'];
-			 $nombre = $_POST['nombre'];
+			 $matricula = $_POST['matricula'];
+			 $marca = $_POST['marca'];
+			 $plaza = $_POST['plaza'];
 			 
 			
 	 
