@@ -74,6 +74,19 @@ body{
     border: 2px solid rgb(217, 153, 57);
     
 }
+
+.btn-eliminar:hover {
+    background-color: rgb(203, 123, 2);
+    border: 2px solid rgb(217, 153, 57);
+    
+}
+
+.btn-eliminar:active {
+    background-color: rgb(203, 123, 2);
+    border: 2px solid rgb(217, 153, 57);
+    
+}
+
 /* p{
     color:rgb(219, 152, 28);
 } */
