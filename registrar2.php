@@ -36,7 +36,7 @@
 				<div class="alert alert-primary" role="alert">
 				  REGISTRO AGREGADO
 				</div>
-				<button type='primary' class='btn btn-primary' role="link" onclick="window.location='index.php'">Regresar</button>
+				<button type='primary' class='btn btn-primary' role="link" onclick="window.location='index.html'">Regresar</button>
 
 				<?php
 			}else{
