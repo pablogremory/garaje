@@ -7,18 +7,19 @@
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
 		
 		<title>Garaje - Eliminar</title>
 	</head>
 	<body>
 		<?php
 			require 'conexion.php';	
-		   	$id = $_GET['id'];	
-			$sql = "DELETE FROM garaje WHERE id=$id";
+		   	
+			$sql = "DELETE FROM usuarios";
 			$resultado = $mysqli->query($sql);
 	
 			if($resultado > 0){
-				echo "<div class='alert alert-info' role='alert'> Se ha borrado correctamente.</div>";
+				echo "<div class='alert alert-info' role='alert'> Se ha borrado todo correctamente.</div>";
 				//header("location:index.php");
 			} else {
 				echo "<div class='alert alert-danger' role='alert'>Hubo un error y no se ha podido borrar correctamente.</div>";

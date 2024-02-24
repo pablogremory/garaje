@@ -55,12 +55,15 @@ $resultado = $mysqli->query($sql);
 							echo "</tr>";
 				
 					}
+					
 					?>
 				</tbody>
 			</table>
 			
 		</div>
 	</div>
-    
+    <?php
+			echo "<a href='index.html'><button type='button' class='btn btn-warning ba'>Volver a Inicio</button></a></div>";
+			?>
 </body>
 </html>

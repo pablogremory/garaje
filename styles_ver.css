@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'fuente';
     src: url('recursos/utendo/Utendo-Light.ttf');
-    /* Puedes agregar otros formatos de fuente si los tienes disponibles */
 }
     
 *{
@@ -9,22 +8,16 @@
 }
 body{
     background-image: url('recursos/plazagaraje2.jpg');
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-size: cover; 
     background-repeat: no-repeat;
     margin: 20px;
     
 }
 
 .container{
-        /* position: absolute;
-        margin-top: 150;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-        
         
 
-       
+       background-color: white;
         padding: 20px;
         border-radius: 10px;
         border: 2px solid rgb(217, 153, 57);
@@ -64,4 +57,15 @@ h2 {
     margin-top: 50px;
     margin-left: 170px;
     background-color: orange;
+}
+
+.no_vehiculo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(recursos/istockphoto-1473881854-640x640.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(217, 153, 57);
 }

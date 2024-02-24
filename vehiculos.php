@@ -5,9 +5,13 @@ require 'conexion.php';
 $sql = "select * from vehiculos where id='$id'";
 $resultado = $mysqli->query($sql);
 
-$sql2 = "select * from vehiculos";
+$sql2 = "select * from vehiculos ";
 $resultado3 = $mysqli->query($sql2);
 $fila3 = $resultado3->fetch_assoc();
+
+$sql4 = "select * from vehiculos where id='$id'";
+$resultado5 = $mysqli->query($sql4);
+$fila5 = $resultado5->fetch_assoc();
 
 $sql3 = "select * from usuarios where id='$id'";
 $resultado4 = $mysqli->query($sql3);
@@ -34,11 +38,13 @@ $fila4 = $resultado4->fetch_assoc();
    			 $('#tabla').DataTable();
 				} );
 		</script>
-    <title>Garaje - Vehiculos</title>
+    <title>Vehiculos de <?php echo $fila4['nombre'];?></title>
 </head>
 <body>
-
-<body>
+	<?php
+		if($fila5){
+		
+	?>
 		<div class="container">
 			<div class="row">
 				<h1>Vehiculos de <?php echo $fila4['nombre'];?></h1>
@@ -69,7 +75,7 @@ $fila4 = $resultado4->fetch_assoc();
 							echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Modificar Vehículo</button></td>";					
 
 					}
-					
+				
 
 					?>
 					<?php
@@ -82,7 +88,15 @@ $fila4 = $resultado4->fetch_assoc();
 		</div>
 	</div>
 	<?php
-echo "<a href='añadir.php?id=$fila3[id]'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
+	echo "<a href='añadir.php?id=$id'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
+	echo "<a href='index.html'><button type='button' class='btn btn-warning ba'>Volver a Inicio</button></a></div>";			
+		}else{
+				
+				echo "<div class='no_vehiculo'><h1>No existe ningún registro de vehículo</h1>";
+				echo "<a href='añadir.php?id=$id'><button type='button' class='btn btn-warning ba'>Añadir Vehículos</button></a>";
+				echo "<a href='index.html'><button type='button' class='btn btn-warning ba'>Volver a Inicio</button></a></div>";
+			}
 ?>
+
 	</body>
 </html>
