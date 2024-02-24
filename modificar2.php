@@ -34,7 +34,7 @@
 				?>
 
 				<div class="alert alert-primary" role="alert">
-				  REGISTRO AGREGADO
+				  MODIFICACIÓN CONIFRMADA
 				</div>
 				<button type='primary' class='btn btn-primary' role="link" onclick="window.location='index.html'">Regresar</button>
 
@@ -42,7 +42,7 @@
 			}else{
 				?>
 				  <div class="alert alert-primary" role="alert alert-danger">
-				  ERROR AL AGREGAR EL REGISTRO
+				  ERROR AL AGREGAR LA MODIFCACIÓN
 				</div>
 				<button type='primary' class='btn btn-primary' role="link" onclick="window.location='index.html'">Regresar</button>
 				<?php

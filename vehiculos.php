@@ -38,7 +38,7 @@ $fila4 = $resultado4->fetch_assoc();
    			 $('#tabla').DataTable();
 				} );
 		</script>
-    <title>Vehiculos de <?php echo $fila4['nombre'];?></title>
+    <title>Vehículos de <?php echo $fila4['nombre'];?></title>
 </head>
 <body>
 	<?php
@@ -55,7 +55,7 @@ $fila4 = $resultado4->fetch_assoc();
 				<thead>
 					<tr>
 						<th>Marca</th>
-						<th>Matricula</th>
+						<th>Matrícula</th>
 						<th>Plaza</th>
 					</tr>
 				</thead>

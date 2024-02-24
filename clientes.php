@@ -50,7 +50,7 @@ $resultado = $mysqli->query($sql);
 						echo "<tr>";
 							echo "<td>$fila[nombre]</td>";
 							echo "<td>$fila[edad]</td>";
-                            echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Ver vehiculos</button></td>";	
+                            echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Ver vehículos</button></td>";	
 
 							echo "</tr>";
 				
