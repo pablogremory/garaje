@@ -13,6 +13,8 @@
 	$matricula = $fila['matricula'];
 	$marca = $fila['marca'];
 	$disponibilidad = $fila2['disponibilidad'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,16 +36,16 @@
 <body>
 		<div class="container">
 			<div class="row">
-			<h2>Registro de coche</h2>
+			<h2>Modificación de datos del coche</h2>
 			</div>
-			<p>Añade la marca, la matrícula y seleccione si ya tiene plaza o no</p>
+			<p>Modifica la marca, la matrícula y seleccione si ya tiene plaza o no</p>
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
 					<form action="modificar2.php" id="registro" name="registro" autocomplete="off" method="post">
 
 						<label for="Marca">Marca:</label><input type="text" class="form-control" name="marca" maxlength="50" id="marca" value="<?php echo $marca?>" required>
-                        <label for="Matrícula">Matrícula:</label><input type="number" class="form-control" name="matricula" maxlength="50" id="matricula" value="<?php echo $matricula?>" required>
+                        <label for="Matrícula">Matrícula:</label><input type="text" class="form-control" name="matricula" maxlength="50" id="matricula" value="<?php echo $matricula?>" required>
 						<br>
 						¿Asignar Plaza?
 						<input type="hidden" name="id" maxlength="50" id="id" value="<?php echo $id; ?>" required>
@@ -60,7 +62,7 @@
 							?>>Si</option>
 						</select>
 						<div class="form-group">
-						<button type="submit" class="btn btn-primary">Registrar</button>
+						<button type="submit" class="btn btn-primary">Modificar</button>
 						</div>
 					</form>
 				</div>

@@ -67,12 +67,13 @@ $fila4 = $resultado4->fetch_assoc();
 							//CONSULTA CON LIMIT = 1
 							$sql2 = "select * from plaza where id_v=$fila[id_v]";
 							$resultado2 = $mysqli->query($sql2);
-							if($fila2 = $resultado2->fetch_assoc()){
+							$fila2 = $resultado2->fetch_assoc();
+							if( $fila2['disponibilidad'] == 1 ){
 								echo "<td>$fila2[id_p]</td>";
 							} else{
 								echo "<td>- -</td>";
 							}
-							echo"<td><a href='vehiculos.php?id=$fila[id]'><button type='button' class='btn btn-warning'>Modificar Vehículo</button></td>";					
+							echo"<td><a href='modificar.php?id=$fila[id_v]'><button type='button' class='btn btn-warning'>Modificar Vehículo</button></td>";					
 
 					}
 				
